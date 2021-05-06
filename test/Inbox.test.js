@@ -72,7 +72,6 @@ describe('Inbox', () => {
         await lottery.methods.pickWinner().call({
             from: accounts[0]
         })
-
         assert(balance0 === balance0+2 || balance1 === balance1+2)
     });
 });
